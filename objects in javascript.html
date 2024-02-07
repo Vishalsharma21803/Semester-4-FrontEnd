@@ -23,6 +23,19 @@
         let b=Student["name"];
         document.write(b + " is " + Student["age"]+ " years old.<br/>");
 
+        //creating a function inside object as a key and using this keyword
+
+        const person={
+            name:'john',
+            age:50,
+            hello:function(){document.write(this.name+" says Hello!");}
+
+
+        };
+
+        //accessing the function inside the object using the keyj
+        person.hello();
+
 
 
         
