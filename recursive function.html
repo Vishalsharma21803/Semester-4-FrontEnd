@@ -8,14 +8,18 @@
 <body>
 
     <script>
-        var a= Number(prompt());
-        function recursive(x){
-            for(let i = 1;i<=x;i++){
-                document.write(i+"<br>");
-        }
+        var x= 0;
+        function recursive(){
+
+          if(x<=10){
+            document.write(x + " <br>");
+            x++;
+          }
+          
+          recursive();
     }
 
-    recursive(a);
+    recursive();
     </script>
     
 </body>
