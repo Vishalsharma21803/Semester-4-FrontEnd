@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form event</title>
 </head>
-<body>
+<body id = "v" onload="fun2()">
     <input  placeholder=" name">
-    <input  placeholder="email" onfocus="this.backgroundColor='purple'">
+    <!-- <input  placeholder="email" onfocus="this.backgroundColor='purple'"> -->
     <input  placeholder="password">
     <br>
 
@@ -17,8 +17,14 @@
 
     <script>
         function fun1(){
-            document.getElementById('three').style.background="yellow";
+            document.getElementById('three').style.backgroundColor="purple";
         }
+        function fun2(){
+            // document.getElementById('v').style.backgroundColor="purple";
+            alert('hello')
+        }
+
+
     </script>
 
 </body>
