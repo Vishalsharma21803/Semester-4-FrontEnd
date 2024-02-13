@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form event</title>
+</head>
+<body>
+    <input  placeholder=" name">
+    <input  placeholder="email" onfocus="this.backgroundColor='purple'">
+    <input  placeholder="password">
+    <br>
+
+    <input type="text" id="three" onfocus="fun1()">
+
+    <button >Submit</button>
+
+    <script>
+        function fun1(){
+            document.getElementById('three').style.color="red";
+        }
+    </script>
+
+</body>
+</html>
