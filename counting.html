@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p> find HTml element by class Name</p>
+    <p class="intro"> find HTml element by class Name</p>
+    <p class = "intro">this example demosnstrates the use of the class attribute</p>
+
+    <p id="demo"> </p>
+    <script>
+
+        const x= document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML = "the first paragrapgh (index 0) is " + x[0].innerHTML;
+
+
+    </script> -->
+
+    <h1> heading 1</h1>
+    <h2>heading 2</h2>
+    <h3> heading 3</h3>
+    <h4> heading 4</h4>
+
+    <p> Paragraph 1</p>
+    <p> Paragraph 2 </p>
+    <p> Paragraph 3
+    </p>
+    <p> Paragraph 4</p>
+    <h id="h" ></h>
+    <script>
+        let i= 0;
+        let count = document.getElementsByTagName("p").length;
+        
+        document.getElementById("h").innerHTML = count;
+    </script>
+
+</body>
+</html> 
