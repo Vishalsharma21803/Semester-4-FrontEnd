@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .login {
+      background-color: #fff;
+      
+      padding: 20px; 
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    body {
+        background-color: blanchedalmond;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+         height: 100vh;
+    }
+    input {
+        border-radius: 10px;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+    button {
+        background-color: skyblue;
+    
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="login">
+    <label>Email : </label>
+    <input type="email" name="Emal" id="mail" placeholder="Email">
+    <br>
+    <label>Password : </label>
+    <input type="password" name = "pass" id="pd" placeholder="Password">
+            <br>
+    <button id = "btn"> Submit</button>
+</div>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click',() => {
+            let mail = document.getElementById('mail').value;
+            let pd = document.getElementById('pd').value;
+            if(mail === "yourgmail@gmail.com"){
+                if(pd === "12345"){
+                    alert("login success")
+                } 
+                else{
+                    alert("wrong password")
+                }               
+            }
+            else{
+                alert("wrong email")
+            }
+        })
+        </script>
+</body>
+</html>
