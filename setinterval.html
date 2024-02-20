@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeout</title>
+</head>
+<body>
+<p id="p"> </p>
+<script>
+  
+
+  let counter = 0
+  setInterval(fun,500);
+  function fun(){
+    if(counter == 5){
+        exit();
+    }
+   counter++;
+   document.getElementById('p').innerHTML="Count: "+counter;
+  }
+  
+</script>
+
+
+</body>
+</html>
