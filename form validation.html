@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <label>Email : </label>
+    <input type="email" name="Emal" id="mail" placeholder="Email">
+    <br>
+    <label>Password : </label>
+    <input type="password" name = "pass" id="pd" placeholder="Password">
+            <br>
+    <button id = "btn"> Submit</button>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click',() => {
+            let mail = document.getElementById('mail').value;
+            let pd = document.getElementById('pd').value;
+            if(mail === "yourgmail@gmail.com"){
+                if(pd === "12345"){
+                    alert("login success")
+                } 
+                else{
+                    alert("wrong password")
+                }               
+            }
+            else{
+                alert("wrong email")
+            }
+        })
+        </script>
+</body>
+</html>
