@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" > CLick </button>
+    <p id="p"></p>
+    <script>
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click',fun);
+        function fun(){
+            btn.style.width="100px";
+            btn.style.height="100px";
+            btn.style.backgroundColor="red";
+            document.getElementById('p').innerHTML="hellooooo I am vishal sharma";
+        }
+
+    </script>
+</body>
+</html>
