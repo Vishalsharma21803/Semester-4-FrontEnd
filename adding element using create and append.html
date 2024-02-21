@@ -37,13 +37,32 @@
     <div id = "two">
         <p id="p1">Welcome</p>
         <p id="p2">to</p>
-        <p id="p3">DOM</p>
+        <p id="p3">INT219</p>
     </div>
     <script>
         var e3 = document.createElement('p');
-        var text3 =  document.createTextNode('CLass of 2020');
-        
+        var text3 =  document.createTextNode('Class of ');
+        var parent2 = document.getElementById('two');
+        var child = document.getElementById('p3');
+        e3.appendChild(text3);
+        parent2.insertBefore(e3, child);
+
     </script>
+
+    <h3>add HTML content using the innerHTML</h3>
+
+    <div id="three">
+        <p>Hello</p>
+    </div>
+    <script>
+        var parent = document.getElementById('three');
+        parent.innerHTML += '<p>World</p>';
+    </script>
+
+    <h3>Insert HTML at a specified position relative to the element</h3>
+    <div id = "four">
+        <p>Welcome</p>
+    </div>
 
 </body>
 
