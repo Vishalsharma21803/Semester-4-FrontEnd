@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Adding a new element using DOM</h3>
+    <script>
+        var e1=document.createElement('p');
+        var text=document.createTextNode("This is the first paragraph.");
+        e1.appendChild(text);
+        document.write("<hr/>");
+        document.body.appendChild(e1);  // Adding to body
+        
+        
+    </script>
+    
+</body>
+</html>
