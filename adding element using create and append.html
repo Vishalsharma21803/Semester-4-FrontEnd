@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding new element in HTML using DOM</title>
+</head>
+<body>
+    <h3>Adding new element using create and append</h3>
+
+    <script>
+        var el = document.createElement('p');
+        var text = document.createTextNode('how are you ?');
+        el.appendChild(text);
+        document.body.appendChild(el);
+        //el.remove(); 
+    </script>
+
+
+    <h3>Adding element to parent element</h3>
+    <div id ="one">
+        <p>Hello </p>
+    </div>
+
+    <script>
+        var e2 = document.createElement('p');
+        var text1 =  document.createTextNode('World');
+        var parent = document.getElementById('one');
+        e2.appendChild(text1);
+        parent.appendChild(e2);
+        // parent.removeChild(e2);
+    </script>
+
+    <h3>
+        Insert element at specified position in parent using insertBE
+    </h3>
+    <div id = "two">
+        <p id="p1">Welcome</p>
+        <p id="p2">to</p>
+        <p id="p3">DOM</p>
+    </div>
+    <script>
+        var e3 = document.createElement('p');
+        var text3 =  document.createTextNode('CLass of 2020');
+        
+    </script>
+
+</body>
+
+</html>
