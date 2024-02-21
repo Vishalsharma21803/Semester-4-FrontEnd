@@ -62,7 +62,14 @@
     <h3>Insert HTML at a specified position relative to the element</h3>
     <div id = "four">
         <p>Welcome</p>
+
     </div>
+    <script>
+    var parent = document.getElementById('four');
+    var child = document.getElementById('p');
+    // parent.insertBefore('beforeend', child);
+    parent.insertAdjacentHTML('beforebegin', '<p>to</p>');
+    </script>
 
 </body>
 
