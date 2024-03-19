@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+        country: "USA",
+        email:"john.doe@example.com",
+        language:["English","Japenese"],
+        address:{
+            street:"123 Main St",
+            city:"New York",
+            state:"NY",
+            zip:"10001"
+        }
+
+    };
+    const Std = {
+        name:"Ravi",
+        age:30,
+        city:"New York",
+        country:"USA",
+        cache:"True"
+    };
+    var std1 = JSON.stringify(Std);
+    documet.write(std1+"<br>");
+    var std2 = JSON.stringify(student,null,2);
+    documet.write(std2+"<br>");
+    // for(i in person){
+    //     document.write(i+" : "+person[i]+"<br>");
+    // }
+
+    // for(i in person.address){
+    //     document.write(i+" : "+person.address[i]+"<br>");
+    // }
+
+    </script>
+</body>
+</html>

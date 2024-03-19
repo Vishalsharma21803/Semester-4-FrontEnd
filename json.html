@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+        country: "USA",
+        email:"john.doe@example.com",
+        language:["English","Japenese"],
+        "address":{
+            street:"123 Main St",
+            city:"New York",
+            state:"NY",
+            zip:"10001"
+        }
+
+    };
+
+    for(i in person.address){
+        document.write(i+" : "+person.address[i]+"<br>");
+    }
+    </script>
+</body>
+</html>
