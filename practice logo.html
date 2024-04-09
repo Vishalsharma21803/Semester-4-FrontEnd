@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  #f0f2f5;
+        }
+        /* body{
+            margin: 0;
+            padding: 0;
+            dispaly: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        } */
+        #main{
+            /* margin:auto; */
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* width: 300px;
+            height: 300px; */
+            /* border: 3px solid green; */
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            /* justify-content: center; */
+        }
+        #image{
+            width: 350px;
+            height: 130px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        input{
+            width: 80%;
+            margin:5px 0px;
+            padding:10px;
+            
+
+        }
+        
+        #login{
+            background-color: rgb(60, 120, 231);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            width: 50px;
+            height: 30px;
+
+        }
+        #link1{
+            margin:25px;
+            text-decoration: none;
+            font-size: 12px;
+
+
+        }
+        #link2{
+            margin: 50px;
+
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 7px;
+
+        }
+        #text{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body >
+    <div id="main">
+        <div>
+            <img src="logo.jpg" alt="image failed" id="image">
+            <p id="text">Log in to Facebook</p>
+        </div>
+        
+        <div id="email" class="input">
+            <input type="email" placeholder="Email Address or mobile number">
+        </div>
+        <div id="password" class="input">
+            <input type="password" placeholder="password">
+        </div>
+        <div >
+            <button id="login">Log in</button>
+        </div>
+        <div >
+            <a href="www.facebook.com" id="link1">Forget password?</a>
+        </div>
+        
+            <a href="www.facebook.com" id="link2">Sign in to Facebook</a>
+        
+    </div>
+    
+</body>
+</html>
